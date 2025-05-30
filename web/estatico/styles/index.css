@@ -1,0 +1,99 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #1c1c1c;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+}
+.chooseCards {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+/* Título del juego */
+h1.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f7941d;
+  color: white;
+  font-size: 2.5em;
+  padding: 10px 30px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  width: 270px;
+  transform: rotate(-2deg);
+}
+
+/* Cards contenedor */
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+/* Tarjeta individual */
+.card-Data {
+  background-color: #f9f9f9;
+  color: #333;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  width: 180px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease;
+}
+
+.card-Data:hover {
+  transform: translateY(-8px);
+}
+
+/* Imagen del Pokémon */
+.imgPokemon {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+/* Nombre y nivel */
+.card-Data-PokeName {
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-bottom: 5px;
+}
+
+.card-Data-Level {
+  font-size: 0.9em;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+/* Botón de jugar */
+button[type="submit"] {
+  background-color: #f7941d;
+  color: white;
+  font-size: 1.2em;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #ffa733;
+}
