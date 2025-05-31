@@ -25,10 +25,6 @@ public class pikachu extends pokemon{
     }
     
     @Override
-    public void subirNivel(){
-        nivel += 1;
-    } 
-    @Override
     public void evolucionar(){
         evolucion = true;
     }

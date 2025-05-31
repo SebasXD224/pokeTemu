@@ -24,28 +24,6 @@ public class shinx extends pokemon{
         this.probCritico = 5;
     }
     
-    public String getNombre(){
-        return nombre;
-    }
-    public int getVidas(){
-        return numVidas;
-    }
-    public int getNivel(){
-        return nivel;
-    }
-    public double getAtaque(){
-        return ataque;
-    }
-    public double getResistencia(){
-        return resistencia;
-    }
-    public boolean getEvolucionEstado(){
-        return evolucion;
-    }
-    @Override
-    public void subirNivel(){
-        nivel += 1;
-    } 
     @Override
     public void evolucionar(){
         evolucion = true;

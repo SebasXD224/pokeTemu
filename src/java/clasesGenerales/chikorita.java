@@ -23,11 +23,6 @@ public class chikorita extends pokemon{
         this.probDefensa = 5;
         this.probCritico = 5;
     }
-    
-    @Override
-    public void subirNivel(){
-        nivel += 1;
-    } 
     @Override
     public void evolucionar(){
         evolucion = true;

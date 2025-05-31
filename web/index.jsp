@@ -1,5 +1,13 @@
 <%@ page import="java.util.List" %>
 <%@ page import="clasesGenerales.PokemonCatalogo" %>
+<%@ page session="true" %>
+<%
+    String usuario = (String) session.getAttribute("usuario");
+    if (usuario == null) {
+        response.sendRedirect("login.jsp");
+        return;
+    }
+%>
 
 <link rel="stylesheet" href="./estatico/styles/index.css">
 
@@ -45,4 +53,7 @@
 <%
     }
 %>
+    <form action="logoutServlet" method="post">
+        <button type="submit">Cerrar sesión</button>
+    </form>
 </section>

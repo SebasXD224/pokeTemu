@@ -54,8 +54,10 @@ public class Ataque extends HttpServlet {
                 mensaje += rival.getNombre() + " ha sido derrotado.";
                 session.removeAttribute("turnoJugador");
                 session.setAttribute("mensaje", mensaje);
-                session.setAttribute("ganador", miPokemon.getNombre()); // NUEVO
+                session.setAttribute("ganador", miPokemon); // NUEVO
                 response.sendRedirect("final.jsp"); // REDIRECCIÓN A OTRA PÁGINA
+                
+                miPokemon.subirNivel(1);
                 return;
             }
 
@@ -63,8 +65,10 @@ public class Ataque extends HttpServlet {
                 mensaje += miPokemon.getNombre() + " ha sido derrotado.";
                 session.removeAttribute("turnoJugador");
                 session.setAttribute("mensaje", mensaje);
-                session.setAttribute("ganador", rival.getNombre()); // NUEVO
+                session.setAttribute("ganador", rival); // NUEVO
                 response.sendRedirect("final.jsp"); // REDIRECCIÓN A OTRA PÁGINA
+                
+                rival.subirNivel(1);
                 return;
             }
 

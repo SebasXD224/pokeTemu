@@ -24,10 +24,6 @@ public class cyndaquil extends pokemon{
         this.probCritico = 5;
     }
     @Override
-    public void subirNivel(){
-        nivel += 1;
-    } 
-    @Override
     public void evolucionar(){
         evolucion = true;
     }

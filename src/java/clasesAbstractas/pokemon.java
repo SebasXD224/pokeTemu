@@ -19,7 +19,6 @@ public abstract class pokemon {
     protected boolean evolucion;
     public String accion;
     
-    protected abstract void subirNivel(); 
     protected abstract void evolucionar(); 
     
     public pokemon(String nombre, int nivel, boolean evolucion) {
@@ -71,6 +70,10 @@ public abstract class pokemon {
         accion = accionNueva;
         
         return accion;
+    }
+    
+    public void subirNivel(int nivelASubir) {
+        nivel += nivelASubir;
     }
     
     // Getters

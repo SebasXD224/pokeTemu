@@ -2,7 +2,9 @@
 <%@ page import="clasesAbstractas.pokemon" %>
 <%
     String mensajeFinal = (String) session.getAttribute("mensaje");
-    String ganador = (String) session.getAttribute("ganador");
+    pokemon ganador = (pokemon) session.getAttribute("ganador");
+    
+    String ganadorStr = ganador.getNombre();
 %>
 <!DOCTYPE html>
 <html>
@@ -21,7 +23,7 @@
 <body>
 
     <div class="mensaje-final"><%= mensajeFinal != null ? mensajeFinal : "La batalla ha terminado." %></div>
-    <div class="ganador">🏆 Ganador: <%= ganador != null ? ganador : "Indeterminado" %> 🏆</div>
+    <div class="ganador">🏆 Ganador: <%= ganador != null ? ganadorStr : "Indeterminado" %> 🏆</div>
 
     <br><br>
     <a href="Index" class="boton">Volver al inicio</a>
