@@ -24,7 +24,7 @@ public class PokemonFactory {
                 case "totodile" -> new totodile(nombre, nivel, evolucion);
                 case "wynaut" -> new wynaut(nombre, nivel, evolucion);
                 case "squirtle" -> new abra(nombre, nivel, evolucion);
-                case "shinx" -> new abra(nombre, nivel, evolucion);
+                case "shinx" -> new shinx(nombre, nivel, evolucion);
                 case "cyndaquil" -> new cyndaquil(nombre, nivel, evolucion);
                         
                 default -> null; // o lanzar excepción si prefieres
