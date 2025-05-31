@@ -23,7 +23,7 @@ public class PokemonFactory {
                 case "chikorita" -> new chikorita(nombre, nivel, evolucion);
                 case "totodile" -> new totodile(nombre, nivel, evolucion);
                 case "wynaut" -> new wynaut(nombre, nivel, evolucion);
-                case "squirtle" -> new abra(nombre, nivel, evolucion);
+                case "squirtle" -> new squirtle(nombre, nivel, evolucion);
                 case "shinx" -> new shinx(nombre, nivel, evolucion);
                 case "cyndaquil" -> new cyndaquil(nombre, nivel, evolucion);
                         
